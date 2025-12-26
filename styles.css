@@ -1,0 +1,30 @@
+/* Minimal styles for the 5-line display page */
+*{box-sizing:border-box}
+.body-bg-pattern{
+  background-image: linear-gradient(135deg, rgbaи(43,124,255,0.06) 0%, rgba(16,185,129,0.04) 50%, rgba(99,102,241,0.03) 100%);
+}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:linear-gradient(to top,#7cb94c,#4cb99f);color:#111}
+.container{max-width:720px;margin:3rem auto;padding:1rem;text-align:center}
+h1{margin-bottom:1.25rem}
+.lines{display:flex;flex-direction:column;gap:.6rem;align-items:center}
+.line{background:rgba(255,255,255,0.9);padding:.8rem 1rem;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);width:100%;max-width:560px;text-align:left}
+
+@media (max-width:520px){
+  .container{margin:1.5rem;padding:.75rem}
+  .line{font-size:.95rem}
+}
+
+/* Examples: how to use a background image
+  1) External image URL (uncomment to use):
+body { background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1400&q=80');
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+  2) Local image: put image in `assets/bg.jpg` and use:
+body { background-image: url('assets/bg.jpg'); background-size: cover; background-position: center; }
+
+  3) Or use the provided subtle gradient by adding class `body-bg-pattern` to the <body> tag:
+     <body class="body-bg-pattern">
+*/
