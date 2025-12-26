@@ -1,0 +1,18 @@
+/* Фон: градиент снизу → вверх от #7cb94c до #4cb99f */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: linear-gradient(to top, #7cb94c 0%, #4cb99f 100%);
+  background-color: #7cb94c;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 { margin-bottom: 0.5rem; }
+p { margin: 0.25rem 0; }
